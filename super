@@ -1,0 +1,35 @@
+//inheritance program
+package program;
+class Stationary_Item {
+    String nm;
+    String col;
+    void display(){
+        System.out.println("pen name is:"+"......"+nm);
+        System.out.println("pen colour is:"+"......."+col);
+    }
+
+    void smooth(){
+        System.out.println("this pen is verry smooth to write");
+    }
+}
+class Rorito_Pen extends Stationary_Item{
+    void write(){
+        System.out.println("more words per minute");
+    }
+    void veraity(){
+        System.out.println("this is gel pen");
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        System.out.println("Rorito_Pen IS-A Stationary_Item ");
+        Rorito_Pen obj = new Rorito_Pen();
+        obj.nm="FANTA_GLIDE";
+        obj.col="blue";
+        obj.display();
+        obj.smooth();
+        obj.write();
+        obj.veraity();
+    }
+}
+
